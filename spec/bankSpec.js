@@ -14,5 +14,6 @@ describe("bankAccount", function() {
             account.reduceBalance(500);
             expect(account.balance).toBe(500);
         });
+
         
 });
