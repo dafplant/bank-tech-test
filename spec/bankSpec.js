@@ -1,4 +1,4 @@
-describe("bankAccount", function() {
+describe("Bank Account", function() {
     var account = new bankAccount();
 
         it("can initialize a bank account with 0", function() {
@@ -15,5 +15,11 @@ describe("bankAccount", function() {
             expect(account.balance).toBe(500);
         });
 
-        
+        it("can return bank statement", function() {
+            account.balance = 1000;
+            account.reduceBalance(500);
+            bankStatement();
+            expect(bankStatement()).toContain("date       || credit  || debit  || balance")
+            expect(account.balance).toBe(500);
+        });
 });
