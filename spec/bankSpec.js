@@ -18,8 +18,8 @@ describe("Bank Account", function() {
         it("can return bank statement", function() {
             account.balance = 1000;
             account.reduceBalance(500);
-            bankStatement();
-            expect(bankStatement()).toContain("date       || credit  || debit  || balance")
+            account.bankStatement();
+            expect(account.transactions).toContain("date       || credit  || debit  || balance")
             expect(account.balance).toBe(500);
         });
 });
