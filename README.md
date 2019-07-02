@@ -1,3 +1,6 @@
+
+<img src='https://bettercodehub.com/edge/badge/dafplant/bank-tech-test?branch=master'>
+
 # Bank tech test
 
 Bank tech test from Week 10 at Makers
